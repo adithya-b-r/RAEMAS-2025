@@ -6,7 +6,7 @@ import { Tracks } from "./Pages/Tracks"
 
 export const Pages = () => {
   return (
-    <div className="bg-amber-200 w-full h-[100vh] pt-[10vh] overflow-y-scroll">
+    <div className="bg-amber-200 w-full h-[100vh] pt-[10vh] overflow-hidden">
       <Home />
       <About />
       <Tracks />
