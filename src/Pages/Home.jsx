@@ -1,10 +1,28 @@
 export const Home = () => {
   return (
-    <div className="h-[90vh] w-full bg-green-100 flex items-center justify-center text-center">
-      <div className="bg-gray-400 px-8">
-        <h1 className="text-4xl font-semibold leading-14 tracking-wide" style={{ wordSpacing: ".5rem" }}>CONFERENCE ON <br />Recent Advances in Engineering, <br />MANAGEMENT & APPLIED SCIENCES</h1>
-        <h4>A national-level conference bringing to gether experts, researchers, and industry<br /> leaders to explore breakthroughs in Engineering, Management, and <br /> Applied Sciences.</h4>
+    <section className="min-h-[91vh] w-full bg-purple-100 text-black px-6 md:px-10 py-10 flex items-center justify-center">
+      <div className="flex flex-col md:flex-row items-center justify-between gap-8 max-w-7xl w-full">
+        <div className="flex flex-col justify-center md:text-left md:w-1/2 animate-fade-in">
+          <h2 className="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
+            Conference on Recent Advances in <br />
+            <span className="text-indigo-600">
+              Engineering, Management & Applied Sciences
+            </span>
+          </h2>
+
+          <p className="text-lg md:text-xl font-semibold text-gray-700">
+            June 20 & 21, 2025 &mdash; Airport Road, Kenjar, Mangaluru, Karnataka 574142
+          </p>
+        </div>
+
+        <div className="flex justify-center items-center md:w-1/2">
+          <img
+            src="../imgs/hero.png"
+            alt="Conference Illustration"
+            className="scale-110"
+          />
+        </div>
       </div>
-    </div>
-  )
-}
+    </section>
+  );
+};
