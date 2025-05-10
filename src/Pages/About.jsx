@@ -2,9 +2,7 @@ export const About = () => {
   return (
     <section id="about" className="w-full bg-gradient-to-br from-purple-50 via-purple-100 to-white flex flex-col items-center justify-center px-6 md:px-12 py-14 gap-20">
 
-      {/* About the College */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-10 w-full max-w-7xl">
-        {/* Image(s) */}
         <div className="w-full md:w-1/2 flex flex-col items-center justify-center gap-6">
           <img
             className="rounded-xl shadow-xl shadow-purple-200 max-w-full h-auto transition-transform transform hover:scale-105"
@@ -18,7 +16,6 @@ export const About = () => {
           />
         </div>
 
-        {/* Text */}
         <div className="w-full md:w-1/2 bg-white/60 backdrop-blur-lg p-8 md:p-10 rounded-3xl shadow-lg border border-purple-200">
           <h2 className="text-4xl md:text-5xl font-extrabold text-indigo-700 mb-6">
             About the College
@@ -35,9 +32,7 @@ export const About = () => {
         </div>
       </div>
 
-      {/* About RAEMAS */}
       <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-10 w-full max-w-7xl">
-        {/* Text */}
         <div className="w-full md:w-1/2 bg-white/60 backdrop-blur-lg p-8 md:p-10 rounded-3xl shadow-lg border border-purple-200">
           <h2 className="text-4xl md:text-5xl font-extrabold text-indigo-700 mb-6">
             About RAEMAS
@@ -50,7 +45,6 @@ export const About = () => {
           </p>
         </div>
 
-        {/* Image */}
         <div className="w-full md:w-1/2 flex items-center justify-center">
           <img
             className="rounded-xl shadow-xl shadow-purple-200 max-w-full h-auto transition-transform transform hover:scale-105"
@@ -59,7 +53,7 @@ export const About = () => {
           />
         </div>
       </div>
-      
+
     </section>
   );
 };
