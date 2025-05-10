@@ -4,8 +4,8 @@ export const Navbar = () => {
       <div className="text-white font-bold text-2xl tracking-wider">RAEMAS 2025</div>
 
       <div className="md:flex hidden text-white font-semibold gap-8">
-        <a href="">Home</a>
-        <a href="">About</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
         <a href="">Tracks</a>
         <a href="">Important Dates</a>
         <a href="">Contact</a>
