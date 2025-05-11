@@ -124,7 +124,7 @@ export const Tracks = () => {
 
       {isModalOpen && (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 opacity-100 transition-all ease-out duration-300">
-          <div className="bg-white p-8 rounded-xl shadow-2xl max-w-lg w-[95%] h-fit overflow-y-auto transition-all duration-500 ease-out border-2 border-purple-500">
+          <div className="bg-gradient-to-r from-purple-100 via-purple-50 to-purple-100 p-8 rounded-xl shadow-2xl max-w-lg w-[95%] h-fit overflow-y-auto transition-all duration-500 ease-out border-2 border-purple-500">
 
             <div className="flex items-center space-x-6 mb-6">
               {modalContent.icon && <span className="text-4xl text-indigo-600">{modalContent.icon}</span>}
@@ -141,7 +141,7 @@ export const Tracks = () => {
 
             <button
               onClick={closeModal}
-              className="w-full py-3 px-6 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-all duration-300 ease-in-out"
+              className="w-full py-3 px-6 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-all duration-300 ease-in-out cursor-pointer"
             >
               Close
             </button>

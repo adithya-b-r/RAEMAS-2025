@@ -1,17 +1,25 @@
 import { useState } from "react";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
+import { useLocation, useNavigate } from "react-router-dom";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [active, setActive] = useState("");
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      const offset = 9 * (window.innerHeight / 100);
-      element.scrollIntoView({ behavior: "smooth", block: "start" });
-      window.scrollBy(0, -offset);
+    if (location.pathname !== "/") {
+      navigate("/", { state: { scrollTo: id } });
+    } else {
+      const element = document.getElementById(id);
+      if (element) {
+        const offset = 9 * (window.innerHeight / 100);
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+        window.scrollBy(0, -offset);
+      }
     }
+
     setActive(id);
     setIsOpen(false);
   };
@@ -36,8 +44,9 @@ export const Navbar = () => {
             <button
               key={link.id}
               onClick={() => scrollToSection(link.id)}
-              className={`cursor-pointer relative group font-semibold transition-all duration-300 ${active === link.id ? "text-amber-400" : "hover:scale-110"
-                }`}
+              className={`cursor-pointer relative group font-semibold transition-all duration-300 ${
+                active === link.id ? "text-amber-400" : "hover:scale-110"
+              }`}
             >
               <span>{link.label}</span>
             </button>
@@ -54,16 +63,18 @@ export const Navbar = () => {
       </div>
 
       <nav
-        className={`md:hidden bg-purple-900 text-white transition-all duration-300 ease-in-out ${isOpen ? "max-h-96 py-4 px-6" : "max-h-0 overflow-hidden"
-          }`}
+        className={`md:hidden bg-purple-900 text-white transition-all duration-300 ease-in-out ${
+          isOpen ? "max-h-96 py-4 px-6" : "max-h-0 overflow-hidden"
+        }`}
       >
         <ul className="flex flex-col gap-4 text-lg font-medium tracking-wide">
           {navLinks.map((link) => (
             <li key={link.id}>
               <button
                 onClick={() => scrollToSection(link.id)}
-                className={`block w-full text-left transition-colors ${active === link.id ? "text-amber-400" : "hover:text-amber-300"
-                  }`}
+                className={`block w-full text-left transition-colors ${
+                  active === link.id ? "text-amber-400" : "hover:text-amber-300"
+                }`}
               >
                 {link.label}
               </button>

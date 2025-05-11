@@ -9,7 +9,7 @@ export const Contact = () => {
   return (
     <div id="contact" className="w-full bg-gray-900 text-white px-6 py-10 md:py-10 flex flex-col md:flex-row flex-wrap gap-10 justify-around items-start">
       <div className="w-full md:w-[28%] font-semibold">
-        <h3 className="text-indigo-500 font-bold text-2xl mb-4 drop-shadow-md text-shadow-purple-300 text-shadow-xs">
+        <h3 className="text-indigo-500 font-bold text-2xl mb-4 drop-shadow-md text-shadow-gray-400 text-shadow-xs tracking-wide">
           Contact
         </h3>
         <img
@@ -29,7 +29,7 @@ export const Contact = () => {
       </div>
 
       <div className="w-full md:w-[28%]">
-        <h3 className="text-indigo-500 font-bold text-2xl mb-4 text-shadow-purple-300 text-shadow-xs">
+        <h3 className="text-indigo-500 font-bold text-2xl mb-4 text-shadow-gray-400 text-shadow-xs tracking-wide">
           Connect With Us
         </h3>
         <div className="flex flex-col gap-3 text-sm font-semibold">
@@ -69,7 +69,7 @@ export const Contact = () => {
       </div>
 
       <div className="w-full md:w-[28%] flex flex-col rounded-md overflow-hidden">
-        <h3 className="text-indigo-500 font-bold text-2xl mb-4 text-shadow-purple-300 text-shadow-2xs">
+        <h3 className="text-indigo-500 font-bold text-2xl mb-4 text-shadow-gray-400 text-shadow-2xs tracking-wide">
           Venue
         </h3>
         <div className="w-full h-72 md:h-48 px-2 pb-2">
