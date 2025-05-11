@@ -1,21 +1,21 @@
 export const ImportantDates = () => {
   const day1 = [
-    "Registration: 9:00 – 10:00 AM",
-    "Inaugural Function: 10:00 – 11:00 AM",
-    "Keynote Address (Topic: Title): 11:30 AM – 12:30 PM",
-    "Lunch: 12:30 – 2:00 PM",
-    "Technical Sessions (Parallel Tracks): 2:00 – 4:45 PM",
+    "Registration: 9:00 - 10:00 AM",
+    "Inaugural Function: 10:00 - 11:00 AM",
+    "Keynote Address (Topic: Title): 11:30 AM - 12:30 PM",
+    "Lunch: 12:30 - 2:00 PM",
+    "Technical Sessions (Parallel Tracks): 2:00 - 4:45 PM",
   ];
 
   const day2 = [
-    "Technical Sessions (Parallel Tracks): 9:00 – 11:00 AM",
+    "Technical Sessions (Parallel Tracks): 9:00 - 11:00 AM",
     "Short Break",
-    "Technical Sessions: 11:15 AM – 12:30 PM",
-    "Lunch: 12:30 – 2:00 PM",
-    "Technical Session: 2:00 – 3:30 PM",
+    "Technical Sessions: 11:15 AM - 12:30 PM",
+    "Lunch: 12:30 - 2:00 PM",
+    "Technical Session: 2:00 - 3:30 PM",
     "High Tea",
-    "Ending Keynote Address (Topic: Title): 3:30 – 4:30 PM",
-    "Valedictory Function: 4:30 – 5:00 PM",
+    "Ending Keynote Address (Topic: Title): 3:30 - 4:30 PM",
+    "Valedictory Function: 4:30 - 5:00 PM",
   ];
 
   return (
