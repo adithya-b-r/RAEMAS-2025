@@ -27,7 +27,7 @@ export const Navbar = () => {
   return (
     <header className="fixed w-full top-0 left-0 z-50 bg-gradient-to-r from-purple-800 via-purple-700 to-purple-800 backdrop-blur-md shadow-md">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <h1 className="text-white text-3xl font-extrabold tracking-wider drop-shadow-sm">
+        <h1 className="text-white text-3xl font-extrabold tracking-wider drop-shadow-sm cursor-pointer">
           RAEMAS <span className="text-amber-400">2025</span>
         </h1>
 
@@ -36,7 +36,7 @@ export const Navbar = () => {
             <button
               key={link.id}
               onClick={() => scrollToSection(link.id)}
-              className={`relative group font-semibold transition-all duration-300 ${active === link.id ? "text-amber-400" : "hover:scale-110"
+              className={`cursor-pointer relative group font-semibold transition-all duration-300 ${active === link.id ? "text-amber-400" : "hover:scale-110"
                 }`}
             >
               <span>{link.label}</span>
