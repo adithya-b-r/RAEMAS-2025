@@ -17,7 +17,7 @@ export const Home = () => {
 
         <div className="flex justify-center items-center md:w-1/2">
           <img
-            src="../imgs/hero.png"
+            src="../imgs/hero2.png"
             alt="Conference Illustration"
             className="scale-110"
           />

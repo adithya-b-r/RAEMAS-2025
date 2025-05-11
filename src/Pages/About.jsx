@@ -21,7 +21,7 @@ export const About = () => {
             About the College
           </h2>
           <p className="text-base md:text-lg text-gray-800 leading-relaxed">
-            Shree Devi Institute of Technology (SDIT), Kenjar Mangalore – a premier institution dedicated to excellence
+            Shree Devi Institute of Technology (SDIT), Kenjar Mangalore - a premier institution dedicated to excellence
             in engineering education and holistic development.
             <br /><br />
             Established in 2006, Shree Devi Institute of Technology has emerged as a beacon of quality education, offering a
@@ -48,7 +48,7 @@ export const About = () => {
         <div className="w-full md:w-1/2 flex items-center justify-center">
           <img
             className="rounded-xl shadow-xl shadow-purple-200 max-w-full h-auto transition-transform transform duration-500 cursor-pointer hover:scale-105"
-            src="../imgs/conference.png"
+            src="../imgs/conference.jpg"
             alt="RAEMAS Conference"
           />
         </div>
