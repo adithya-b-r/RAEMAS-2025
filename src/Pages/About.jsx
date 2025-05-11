@@ -5,12 +5,12 @@ export const About = () => {
       <div className="flex flex-col md:flex-row items-center justify-center gap-10 w-full max-w-7xl">
         <div className="w-full md:w-1/2 flex flex-col items-center justify-center gap-6">
           <img
-            className="rounded-xl shadow-xl shadow-purple-200 max-w-full h-auto transition-transform transform hover:scale-105"
+            className="rounded-xl shadow-xl shadow-purple-200 max-w-full h-auto transition-transform transform duration-500 cursor-pointer hover:scale-105"
             src="../imgs/sdit.jpg"
             alt="Shree Devi Institute of Technology"
           />
           <img
-            className="md:block hidden rounded-xl shadow-xl shadow-purple-200 max-w-full h-auto transition-transform transform hover:scale-105"
+            className="md:block hidden rounded-xl shadow-xl shadow-purple-200 max-w-full h-auto transition-transform duration-500 cursor-pointer transform hover:scale-105"
             src="../imgs/sdit2.jpg"
             alt="Shree Devi Institute of Technology"
           />
@@ -47,7 +47,7 @@ export const About = () => {
 
         <div className="w-full md:w-1/2 flex items-center justify-center">
           <img
-            className="rounded-xl shadow-xl shadow-purple-200 max-w-full h-auto transition-transform transform hover:scale-105"
+            className="rounded-xl shadow-xl shadow-purple-200 max-w-full h-auto transition-transform transform duration-500 cursor-pointer hover:scale-105"
             src="../imgs/conference.png"
             alt="RAEMAS Conference"
           />
