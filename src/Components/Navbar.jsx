@@ -29,6 +29,7 @@ export const Navbar = () => {
     { label: "About", id: "about" },
     { label: "Tracks", id: "tracks" },
     { label: "Important Dates", id: "important-dates" },
+    { label: "Call For Papers", id: "call-for-papers" },
     { label: "Contact", id: "contact" },
   ];
 
@@ -39,14 +40,19 @@ export const Navbar = () => {
           RAEMAS <span className="text-amber-400">2025</span>
         </h1>
 
-        <nav className="hidden md:flex gap-10 text-white text-lg font-medium tracking-wide">
+        <nav className="hidden md:flex gap-8 text-white text-lg font-medium tracking-wide">
           {navLinks.map((link) => (
             <button
               key={link.id}
-              onClick={() => scrollToSection(link.id)}
-              className={`cursor-pointer relative group font-semibold transition-all duration-300 ${
-                active === link.id ? "text-amber-400" : "hover:scale-110"
-              }`}
+              onClick={() => {
+                if (link.id.includes("call-for-papers")) {
+                  navigate("/call-for-papers");
+                } else {
+                  scrollToSection(link.id);
+                }
+              }}
+              className={`cursor-pointer relative group font-semibold transition-all duration-300 ${active === link.id ? "text-amber-400" : "hover:scale-110"
+                }`}
             >
               <span>{link.label}</span>
             </button>
@@ -63,18 +69,23 @@ export const Navbar = () => {
       </div>
 
       <nav
-        className={`md:hidden bg-purple-900 text-white transition-all duration-300 ease-in-out ${
-          isOpen ? "max-h-96 py-4 px-6" : "max-h-0 overflow-hidden"
-        }`}
+        className={`md:hidden bg-purple-900 text-white transition-all duration-300 ease-in-out ${isOpen ? "max-h-96 py-4 px-6" : "max-h-0 overflow-hidden"
+          }`}
       >
         <ul className="flex flex-col gap-4 text-lg font-medium tracking-wide">
           {navLinks.map((link) => (
             <li key={link.id}>
               <button
-                onClick={() => scrollToSection(link.id)}
-                className={`block w-full text-left transition-colors ${
-                  active === link.id ? "text-amber-400" : "hover:text-amber-300"
-                }`}
+                onClick={() => {
+                  if (link.id.includes("call-for-papers")) {
+                    navigate("/call-for-papers");
+                    setIsOpen(false);
+                  } else {
+                    scrollToSection(link.id);
+                  }
+                }}
+                className={`block w-full text-left transition-colors ${active === link.id ? "text-amber-400" : "hover:text-amber-300"
+                  }`}
               >
                 {link.label}
               </button>
