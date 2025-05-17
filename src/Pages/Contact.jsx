@@ -21,7 +21,7 @@ export const Contact = () => {
           Airport Road, Kenjar, Mangalore - 574142, Karnataka, India.
         </p>
         <p className="text-sm mb-1">
-          📧 <a href="mailto:sditprincipal@gmail.com" className="hover:underline">sditprincipal@gmail.com</a>
+          📧 <a href="mailto:sditraemas2025@gmail.com" className="hover:underline">sditraemas2025@gmail.com</a>
         </p>
         <p className="text-sm">
           📞 <a href="tel:+918242254104" className="hover:underline">+91 (824) 2254104</a>
