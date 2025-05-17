@@ -47,6 +47,7 @@ export const Navbar = () => {
     { label: "Tracks", id: "tracks" },
     { label: "Important Dates", id: "important-dates" },
     { label: "Call For Papers", id: "call-for-papers" },
+    { label: "Conference Chairs", id: "conference-chairs" }, 
     { label: "Contact", id: "contact" },
   ];
 
@@ -156,7 +157,7 @@ export const Navbar = () => {
 
       {/* Mobile menu */}
       <nav
-        className={`md:hidden bg-purple-900 text-white transition-all duration-300 ease-in-out ${isOpen ? "max-h-96 py-4 px-6" : "max-h-0 overflow-hidden"
+        className={`md:hidden bg-purple-900 text-white transition-all duration-300 ease-in-out ${isOpen ? "max-h-fit py-4 px-6" : "max-h-0 overflow-hidden"
           }`}
       >
         <ul className="flex flex-col gap-4 text-lg font-medium tracking-wide">
