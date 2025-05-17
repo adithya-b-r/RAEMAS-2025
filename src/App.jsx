@@ -14,6 +14,7 @@ function App() {
           <Route path="/" element={<Pages />} />
           <Route path="/call-for-papers" element={<CallForPapers />} />
           <Route path="/committee" element={<PageNotFound title={"Under Construction"} status={204} />} />
+          <Route path="/register" element={<PageNotFound title={"Under Construction"} status={204} />} />
           <Route path="*" element={<PageNotFound/>} />
         </Routes>
       </Router>
