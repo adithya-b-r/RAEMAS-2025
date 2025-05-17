@@ -47,7 +47,7 @@ export const Navbar = () => {
     { label: "Tracks", id: "tracks" },
     { label: "Important Dates", id: "important-dates" },
     { label: "Call For Papers", id: "call-for-papers" },
-    { label: "Conference Chairs", id: "conference-chairs" }, 
+    { label: "Committee", id: "committee" },
     { label: "Contact", id: "contact" },
   ];
 
@@ -76,6 +76,8 @@ export const Navbar = () => {
               onClick={() => {
                 if (link.id.includes("call-for-papers")) {
                   navigate("/call-for-papers");
+                } else if (link.id.includes("committee")) {
+                  navigate("/committee");
                 } else {
                   scrollToSection(link.id);
                 }
@@ -109,6 +111,8 @@ export const Navbar = () => {
                         setIsMoreOpen(false);
                         if (link.id.includes("call-for-papers")) {
                           navigate("/call-for-papers");
+                        } else if (link.id.includes("committee")) {
+                          navigate("/committee");
                         } else {
                           scrollToSection(link.id);
                         }
