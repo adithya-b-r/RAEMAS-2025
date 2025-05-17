@@ -1,4 +1,10 @@
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 export const Home = () => {
+  const [isRegistered, setIsRegistered] = useState(false);
+  const navigate = useNavigate();
+
   return (
     <section
       id="home"
@@ -19,6 +25,24 @@ export const Home = () => {
           <p className="text-lg md:text-xl font-semibold text-gray-700">
             June 20 & 21, 2025 — Airport Road, Kenjar, Mangaluru, Karnataka 574142
           </p>
+
+          {isRegistered ? (
+            <button
+              onClick={() => navigate("/dashboard")}
+              className="bg-indigo-600 mt-6 py-3 w-full sm:w-1/2 md:w-1/3 text-base sm:text-lg md:text-xl border-2 font-semibold text-white rounded-lg cursor-pointer hover:border-indigo-600 hover:bg-transparent hover:text-indigo-600 duration-300"
+            >
+              Dashboard
+            </button>
+          ) : (
+            <button
+              onClick={() => navigate("/register")}
+              className="bg-indigo-600 mt-6 py-3 w-full sm:w-1/2 md:w-1/3 text-base sm:text-lg md:text-xl border-2 font-semibold text-white rounded-lg cursor-pointer hover:border-indigo-600 hover:bg-transparent hover:text-indigo-600 duration-300"
+            >
+              Register Now
+            </button>
+          )}
+
+
         </div>
 
         <div className="flex justify-center items-center md:w-1/2">
